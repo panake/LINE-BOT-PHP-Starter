@@ -1,6 +1,6 @@
 <?php
 $content = file_get_contents('php://input');
-if ($content != NULL){
+if (!is_null($content)){
  echo "YYY"; 
 }
 echo "OK XXX";
