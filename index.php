@@ -5,10 +5,12 @@ if (!is_null($events['events'])) {
   foreach ($events['events'] as $event) {	
     if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
       $text = $event['message']['text'];	
+      $userId = $event['source']['userId'];
       $replyToken = $event['replyToken'];	
       $messages = [				
-      'type' => 'text',				
-      'text' => $text			
+        'type' => 'text',				
+        'text' => $text,
+        'userId' => $userId	
       ];
       $url = 'http://richflag.com/webhook';
       $data = [				
