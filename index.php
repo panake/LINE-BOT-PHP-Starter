@@ -6,4 +6,4 @@ curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 $result = curl_exec($ch);			
 curl_close($ch);			
 echo $result . "";
-echo "xxx";
+echo "zzz";
