@@ -10,7 +10,7 @@ if (!is_null($events['events'])) {
       'type' => 'text',				
       'text' => $text			
       ];
-      $url = 'http://richflag.com';
+      $url = 'http://richflag.com/line';
       $data = [				
         'replyToken' => $replyToken,				
         'messages' => [$messages],			
