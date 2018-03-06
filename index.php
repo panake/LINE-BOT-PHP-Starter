@@ -6,10 +6,12 @@ if (!is_null($events['events'])) {
     if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
       $text = $event['message']['text'];	
       $userId = $event['source']['userId'];
+      $groupId = $event['source']['groupId'];
       $replyToken = $event['replyToken'];	
       $messages = [				
         'type' => 'text',				
         'text' => $text,
+        'groupId' => $groupId,
         'userId' => $userId	
       ];
       $url = 'http://richflag.com/webhook';
