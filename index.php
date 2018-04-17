@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
         'groupId' => $groupId,
         'userId' => $userId	
       ];
-      $url = 'http://richflag.com/webhook';
+      $url = 'http://128.199.152.70//webhook';
       $data = [				
         'replyToken' => $replyToken,				
         'messages' => [$messages],			
