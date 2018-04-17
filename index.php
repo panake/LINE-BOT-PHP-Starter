@@ -30,9 +30,9 @@ if (!is_null($events['events'])) {
       $result = curl_exec($ch);			
       curl_close($ch);			
       echo $result . "";
-      echo "zzz";
+      echo "1111";
     }
   }
 } else {
-  echo "xxx";
+  echo "0000";
 }
